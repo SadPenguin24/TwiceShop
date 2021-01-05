@@ -1,0 +1,15 @@
+.product_overview {
+  background-color: #f4f4f2;
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+  padding-bottom: 50px;
+}
+
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2rem;
+}

@@ -1,0 +1,138 @@
+.t-white {
+  color: white;
+}
+
+.wrap-menu-desktop {
+  top: 0;
+}
+
+.logo-mobile {
+  width: 100%;
+}
+
+.logo {
+  fill: black;
+}
+
+.sticky {
+  z-index: 100;
+  display: absolute;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+.navi-item {
+  color: white !important;
+  cursor: pointer;
+}
+.navi-item:not(.icon-header-item) {
+  font-size: large;
+}
+
+.active {
+  background-color: #f4f4f2;
+}
+.active .navi-item {
+  color: black !important;
+}
+.active .navi-item:not(.icon-header-item) {
+  font-size: large;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-burger-button {
+  position: fixed;
+}
+
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #717fe0;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #717fe0;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  display: block;
+  color: black;
+  padding: 0.8em;
+}
+
+.bm-item-list:hover {
+  background-color: black;
+}
+
+/* Individual item */
+.bm-item {
+  font-size: 150%;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.dropdown ul {
+  margin-top: 10px;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  background: white;
+  left: 0px;
+  list-style: none;
+  border-radius: 5px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: all 0.4s ease;
+}
+
+.dropdown li {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.dropdown li:hover {
+  background-color: #717fe0;
+}
+
+.dropdown i {
+  color: black;
+  text-decoration: none;
+}
+
+.dropdown button {
+  background: none;
+  text-decoration: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.dropdown button:focus + ul {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(0px);
+}

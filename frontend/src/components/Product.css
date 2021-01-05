@@ -1,0 +1,6 @@
+.product_image {
+  display: flex;
+  height: 500px;
+  object-fit: cover;
+}
+
