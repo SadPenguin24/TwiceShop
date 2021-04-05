@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Baskervville&display=swap");
+
+/*Home*/
+
+.bg-dark {
+  background-color: #364547 !important;
+}
+
+.logo {
+  font-family: "Baskervville", serif;
+}
+
+.searchBox button,
+.searchBox input {
+  border-radius: 20px;
+}
+
+.carousel {
+  border-radius: 20px;
+}
+
+/*ProductHome*/
+.cCard {
+  background-color: #ebebeb;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  padding: 1.5rem 1.5rem 0.1rem;
+}
+
+.cCard img {
+  border-radius: 20px;
+}
+
+.rating span i {
+  color: #364547 !important;
+}
+
+/*Product*/
+.pro-img {
+  border-radius: 20px;
+}
