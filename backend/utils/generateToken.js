@@ -23,7 +23,7 @@ const generateEmailCode = (id, email) => {
       expiresIn: "1d",
     },
     (err, emailToken) => {
-      const nodeUrl = "http://localhost:5000";
+      let nodeUrl = "http://localhost:5000";
       if (process.env.NODE_ENV === production) {
         nodeUrl = "https://twiceshopapp.herokuapp.com";
       }
