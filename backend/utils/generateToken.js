@@ -23,7 +23,13 @@ const generateEmailCode = (id, email) => {
       expiresIn: "1d",
     },
     (err, emailToken) => {
-      const url = `http://localhost:5000/api/users/confirm/${id}/${emailToken}`;
+      const nodeUrl;
+      if (process.env.NODE_ENV === development) {
+        nodeUrl = "http://localhost:5000";
+      } else if (process.env.NODE_ENV === production) {
+        nodeUrl = "https://twiceshopapp.herokuapp.com";
+      }
+      const url = `${nodeUrl}/api/users/confirm/${id}/${emailToken}`;
 
       transporter.sendMail({
         from: process.env.GMAIL_USER,
