@@ -5,11 +5,14 @@
 Create a .env file in then root and add the following
 
 ```
-NODE_ENV = development
+NODE_ENV = production
 PORT = 5000
-MONGO_URI = your mongodb uri
-JWT_SECRET = 'abc123'
-PAYPAL_CLIENT_ID = your paypal client id
+MONGO_URI = mongodb+srv://danAdmin:admin@twice-ecommerce.xkvav.mongodb.net/TwiceShop?retryWrites=true&w=majority
+JWT_SECRET = '3-bscs-b'
+EMAIL_SECRET = 'PSULINGAYEN'
+GMAIL_USER = 'danhendrix.confirm@gmail.com'
+GMAIL_PASS = 'confirmthepassword'
+PAYPAL_CLIENT_ID = AQp6V88nFjrom-i1HssgAVSpy-poWKD6z5I2h3BXQdQjAU4PMFezCHLzydL0xf-lidMx-rKelBb8R44Q
 ```
 
 ### Install Dependencies (frontend & backend)
@@ -18,6 +21,7 @@ PAYPAL_CLIENT_ID = your paypal client id
 npm install
 cd frontend
 npm install
+cd ..
 ```
 
 ### Run
